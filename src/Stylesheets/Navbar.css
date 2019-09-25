@@ -1,0 +1,173 @@
+.Navbar{
+    width:100vw;
+    height: auto;
+    position: fixed;
+    top:0px;
+    z-index: 6;
+    color:white;
+    background-color: #000000a0;
+}
+
+.navbarMobileWrapper{
+    display: flex;
+    flex:1 1 auto;
+    align-items: center;
+}
+
+.navbarContent{
+    position: relative;
+    display: flex;
+    width:100vw;
+    align-items: center;
+}
+
+.navbarTitleWrapper{
+    margin-left: 20px;
+    align-self: center;
+    transition: background-color 0.5s, border-color 0.5s;
+    cursor: pointer;
+}
+
+.navbarTitleWrapper h1{
+    margin:10px;
+}
+
+.navbarMenuItems{
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    list-style: none;
+    margin-right: 30px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbarMenuItems a{
+    box-sizing: border-box;
+    display:block;
+    text-align: center;
+    border-radius: .2em;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.resumeDownload{
+    border-radius: .2em;
+    border:1px solid white;
+    background-color: #000000a0;
+    cursor: pointer;
+    transition: all .5s;
+    color:white;
+}
+
+.navbarTitle{
+    margin-right: 10px;
+    padding:10px;
+    border-radius: .15em;
+    border:1px solid white;
+    background-color: #000000a0;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.menuItem{
+    margin-right: 10px;
+    padding:10px;
+    border-radius: .2em;
+    background-color: #000000a0;
+    border:1px solid white;
+    cursor: pointer;
+    transition: all .5s
+}
+
+.hovered{
+    transform: scale(0.95);
+    background-color: gold;
+    border-color: black;
+    color:black;
+}
+
+.menuItem:hover,.navbarTitle:hover,.resumeDownload:hover, .resumeDownload a:hover{
+    transform: scale(0.95);
+    background-color: gold;
+    border-color: black;
+    color:black;
+}
+
+
+
+
+
+
+/* mobile */
+@media(max-width:720px){
+    .navbarContent{
+        display: flex;
+        align-items: initial;
+        flex-direction: column;
+        width: 100vw;;
+    }
+
+    .navbarTitle{
+        font-size:100%;
+    }
+
+    .navbarTitleWrapper{
+        display: flex;
+        flex:1 1 auto;
+        align-items: center;
+    }
+
+    #heading{
+        position: relative;
+        display:flex;
+        flex:1 1 auto;
+        justify-content: center;
+        padding-left: 70px;
+    }    
+    
+    .HamburgerMenu{
+        position: relative;
+        display:flex;
+        justify-content: center;
+    }
+
+    .navbarMenuItems{
+        display: flex;
+        flex-direction: column;
+        flex:1 1 auto;
+        background-color:#00000001;
+        margin:0;
+        overflow: hidden;
+        max-height: 0px;
+        transition: max-height .7s;
+    }
+
+    .menuItem{
+        display:flex;
+        flex:1 1 auto;
+        margin:0;
+        justify-content: center;
+        text-align: center;
+        font-size: 2em;
+        border:none;
+        width:100%;
+    }
+
+    .resumeMobile{
+        width:100%;
+    }
+
+    .resumeDownload{
+        display:flex;
+        flex:1 1 auto;
+        justify-content: center;
+        margin:0;
+        width:100%;
+        border:none;
+    }
+
+    .menuExpanded{
+        max-height:500px;
+    }
+}

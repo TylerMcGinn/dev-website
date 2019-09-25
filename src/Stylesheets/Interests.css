@@ -1,0 +1,230 @@
+/*shared*/
+#drawer1{
+    background-image:url('../Media/fitnessCompressed.jpg');
+}
+
+#drawer2{
+    background-image:url('../Media/rockClimbingCompressed.jpg');
+}
+
+#drawer3{
+    background-image:url('../Media/kiteboardingCompressed.jpg');
+}
+
+#drawer4{
+    background-image:url('../Media/pcbCircuitCompressed.jpg');
+}
+
+#drawer5{
+    background-image:url('../Media/codingCompressed.jpg');
+}
+
+
+
+
+
+
+
+/* mobile*/
+@media(max-width:720px){
+    .Interests{
+        width:100%;
+        height: 100%;
+    }
+
+    .interestsWrapper{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 100%;
+        width:90%;
+        bottom:5%;
+        left: 5%;
+        background-color: #00000010;
+    }
+
+    .interestContainer{
+        display: flex;
+        flex-direction: column;
+        min-height:30px;
+        height:0%;
+        width: 100%;
+        margin-top: 2px;
+        transition: height 1s;
+    }
+
+    .handle{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 30px;
+        width: 100%;
+        height:30px;
+        background-color: white;
+        color:black;
+        cursor: pointer;
+        transition: transform .2s, box-shadow .2s;
+    }
+
+    .handle h2{
+        margin:0;
+    }
+
+    .handle:hover{
+        border:none;
+        color:black;
+        background-color: gold;
+    }
+
+    .textContainer{
+        position: relative;
+    }
+
+    .drawer{
+        max-height: 100%;
+        height: 100%;
+        width:100%;
+        background-size: cover;
+        overflow:hidden;
+    }
+
+    .drawerDescription{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffffb0;
+        height: 100%;
+        width:100%;
+        font-size: 1.2em ;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    
+    .drawerDescription p{
+        margin:1em 5%;
+    
+    }
+    
+    .drawerDescription h1{
+        margin:1em 10%;
+        margin-bottom:0;
+    }
+    
+    .drawerMask{
+        transition: opacity 1s;
+        opacity: 1;
+    }
+    
+    .open{
+        height:100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* desktop start */
+@media(min-width:720px){
+    .Interests{
+        width:100%;
+        height: 100%;
+    }
+
+    .interestsWrapper{
+        display: flex;
+        position: relative;
+        height: 100%;
+        width:90%;
+        top:4%;
+        left: 5%;
+        background-color: #00000010;
+        opacity: 0;
+    }
+
+    .interestContainer{
+        display: flex;
+        min-width:40px;
+        width:0%;
+        height: 100%;
+        margin-left: 4px;
+        transition: width 1s;
+    }
+
+    .handle{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 40px;
+        height: 100%;
+        width:40px;
+        background-color:#ffffff90;
+        color:gold;
+        cursor: pointer;
+        transition: transform .2s, box-shadow .2s;
+    }
+
+    .handle h2{
+        margin:0;
+    }
+
+    .handle:hover{
+        border:none;
+        transform: scaleX(1.1) scaleY(1.02);
+        box-shadow: 0px 0px 12px 0px #00000070;
+    }
+
+    .textContainer{
+        white-space: nowrap;
+        transform: rotate(-90deg);
+    }
+
+    .drawer{
+        max-width: 100%;
+        height: 100%;
+        width:100%;
+        background-size: cover;
+        overflow:hidden;
+    }
+
+    .drawerDescription{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffffb0;
+        height: 100%;
+        font-size: 1.7em;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    .drawerDescription p{
+        margin:1em 5%;
+
+    }
+
+    .drawerDescription h1{
+        margin-bottom:0;
+
+    }
+
+    .drawerMask{
+        transition: opacity 1s;
+        opacity: 1;
+    }
+
+    .open{
+        width:100%;
+    }
+}

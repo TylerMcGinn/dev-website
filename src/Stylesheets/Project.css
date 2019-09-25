@@ -1,0 +1,188 @@
+/*Mobile*/
+@media(max-width:720px){
+    .projectCard{
+        width:100vw;
+        height: 100vh;
+        right:5%;
+        background-color:white;
+        overflow: auto;
+    }
+
+    .projectBackground{
+        position: absolute;
+        width:100vw;
+        height: 100vh;
+        background-size: cover;
+        opacity: .08;
+        z-index: 1;
+    }
+
+    .projectContent{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 5vw;
+        z-index: 2;
+    }
+
+    .projectContent *{
+        margin:0;
+    }
+
+    .projectContent .projectParams,.projectDescription{
+        margin: 5%;
+    }
+
+    .projectTitle{
+        font-size:230%;
+        margin-bottom: 5%;
+    }
+
+    .projectStack{
+        display:flex;
+        flex-wrap: wrap;
+        width:100%;
+        justify-content: space-evenly;
+    }
+
+    .projectStack img{
+        width:80px;
+        height:80px;
+        margin:0;
+    }
+
+    .projectParams{
+        align-self: flex-start;
+    }
+
+    .projectSeparator{
+        width:90%;
+        height:3px;
+        background-color: black;
+    }
+
+    .backLink{
+        align-self: flex-start;
+        text-decoration: none;
+        color:black;
+        border:2px solid black;
+        border-radius: .2em;
+        padding:5px;
+        margin:10px 0px 0px 10px;
+        font-size: 60%;
+        font-weight: bold;
+        transition: all .3s;
+    }
+
+    .backLink:hover{
+        background-color: gold;
+        transform:scale(.9);
+    }
+}
+
+
+
+
+
+/*Desktop*/
+@media(min-width:720px){
+    .projectCard::-webkit-scrollbar-track{
+        background-color: white;
+        border-radius: none;
+        border-right:2px solid black
+    }
+
+    .Project{
+        position: relative;
+        display: flex;
+        width:100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .projectCard{
+        position: absolute;
+        width:450px;
+        height: 100vh;
+        right:5%;
+        border-left: 2px solid black;
+        background-color:white;
+        overflow: auto;
+    }
+
+    .projectBackground{
+        position: absolute;
+        width:30vw;
+        height: 100vh;
+        right:5%;
+        background-size: cover;
+        opacity: .08;
+        z-index: 1;
+    }
+
+    .projectContent{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1.5em;
+        z-index: 2;
+    }
+
+    .projectContent *{
+        margin:0;
+    }
+
+    .projectContent .projectParams,.projectDescription{
+        margin: 5%;
+    }
+
+    .projectTitle{
+        font-size:230%;
+        margin-bottom: 5%;
+    }
+
+    .projectStack{
+        display:flex;
+        flex-wrap: wrap;
+        width:100%;
+        justify-content: space-evenly;
+    }
+
+    .projectStack img{
+        width:80px;
+        height:80px;
+        margin:0;
+    }
+
+    .projectParams{
+        align-self: flex-start;
+    }
+
+    .projectSeparator{
+        width:90%;
+        height:3px;
+        background-color: black;
+    }
+
+    .backLink{
+        align-self: flex-start;
+        text-decoration: none;
+        color:black;
+        border:2px solid black;
+        border-radius: .2em;
+        padding:5px;
+        margin:5px 0px 0px 10px;
+        font-size: 60%;
+        font-weight: bold;
+        transition: all .3s;
+    }
+
+    .backLink:hover{
+        background-color: gold;
+        transform:scale(.9);
+    }
+}

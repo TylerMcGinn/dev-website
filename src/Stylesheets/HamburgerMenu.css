@@ -1,0 +1,40 @@
+.HamburgerMenu{
+    position: relative;
+    display:flex;
+    justify-content: flex-end;
+    margin: -10px;
+    display: none;
+}
+
+.hamburger{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 5px 10px;
+    border:5px solid white;
+    border-radius: 10px;
+    transform: scale(0.4);
+}
+
+.hamburgerBar{
+    position: relative;
+    display: block;
+    margin: 10px 0px;
+    width:62px;
+    height: 5px;
+    transform-origin: left;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.slide{
+    transform: translateX(120%);
+}
+
+.crossTop{
+    transform:translateX(10px) rotate(45deg) ;
+}
+
+.crossBottom{
+    transform:translateX(10px) rotate(-45deg) ;
+}

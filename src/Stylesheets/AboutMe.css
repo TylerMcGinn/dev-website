@@ -1,0 +1,120 @@
+.AboutMe{
+    position: absolute;
+    display: block;
+    height: 100%;
+    width:100%;
+}
+
+.aboutMeContentWrapper{
+    position: relative;
+    display: flex;
+    flex:1 1 auto;
+    flex-direction: column;
+    left:7%;
+    justify-content: flex-end;
+    height: 80%;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.aboutMeText{
+    position: absolute;
+    width:40vw;
+    bottom: 0%;
+    font-size: 1.5em;
+}
+
+.aboutMeImg{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60%;
+    height: 60%;
+    right:10%;
+    bottom: 10%;
+}
+
+.aboutMeImg img{
+    width: 80%;
+    height: auto;
+    opacity: .4;
+}
+
+
+@media(max-width:870px){
+    .aboutMeText{
+        font-size: 2.5vw;
+    } 
+}
+
+
+
+
+/* mobile */
+@media(max-width:720px){
+    .aboutMeContentWrapper{
+        position: relative;
+        display: flex;
+        flex:1 1 auto;
+        flex-direction: column-reverse;
+        left:0%;
+        align-items: center;
+        height: 100%;
+    }
+
+    .aboutMeImg{
+        position: relative;
+        width:initial;
+        height: initial;
+        right:unset;
+        bottom: unset;
+        margin-top: 10%;
+    }
+
+    .aboutMeImg img{
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        opacity: .4;
+    } 
+
+    .aboutMeImg{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: auto;
+    }
+
+    .aboutMeText{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width:80vw;
+        font-size: 1em;
+        bottom:15%;
+    }
+
+    .aboutMeText *{
+        margin: 2%;
+    }
+}
+
+@media (min-width:400px) and (max-width:720px){
+    .aboutMeContentWrapper{
+        transform: translateY(-10vh);
+    }
+}
+
+@media (max-width:400px){
+    .aboutMeContentWrapper{
+        transform: translateY(-9vh);
+    }
+    
+    .aboutMeText{
+        font-size: 4vw;
+        bottom: 18%;
+    }
+}

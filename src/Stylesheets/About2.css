@@ -1,0 +1,67 @@
+.About2{
+    position: relative;
+    width:100vw;
+    height:100vh;
+}
+
+.aboutView{
+    width:100vw;
+    height: 80vh;
+    opacity: 0;
+    transition: all 2s;
+}
+
+.viewControls{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    bottom: 5%;
+}
+
+.viewTabs{
+    display: flex;
+    flex:1 1 auto;
+    width:100%;
+    justify-content: space-evenly;
+    font-size: 4vw;
+    list-style: none;
+}
+
+.tabSeparator{
+    width:80vw;
+    height: .3em;
+    background-color: black;
+    border: none;
+}
+
+.tabHighlight{
+    height: .1em;
+    background-color: gold;
+    border: none;
+    max-width: 0;
+    transition: all .3s;
+}
+
+.highlighted{
+    max-width: 100%;
+
+}
+
+.aboutTabItem{
+    cursor: pointer;
+}
+
+
+
+
+
+/* mobile */
+@media (max-width:720px){
+    .viewTabs{
+        font-size: 5vw;
+        width:90vw;
+    }
+}

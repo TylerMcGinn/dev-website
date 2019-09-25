@@ -1,0 +1,332 @@
+/* mobile */
+@media(max-width:720px){
+    .Contact{
+        height: auto;
+        width: 100vw;
+        background-color: white;
+        transform:   translateX(-100%);
+        opacity: 0;
+        transition: transform 1s, opacity 1.5s;
+    }
+    
+    .formWrapper{
+        width:100%;
+        height: 80%;
+    }
+    
+    .contactForm{
+        position: relative;
+        width:80%;
+        top:0%;
+        left: 10%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 3fr 1fr;
+        grid-gap: 10px;
+        margin-bottom: 10%;
+    }
+    
+    .contactForm *{
+        font-size: 2.5em;
+        font-family: 'Segoe UI',-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        outline: none;
+    }
+    
+    .formField{
+        border-radius: .1em;
+        border:none;
+        background-color: #3F3F3F;
+        color:gold;
+        caret-color: gold;
+    }
+    
+    .formField::placeholder{
+        columns: #5f5f5f;
+    }
+    
+    .invalidPlaceholder::placeholder{
+        color:black;
+    }
+    
+    .invalidEntry{
+        background-color: #ff000090;
+        caret-color: black;
+    }
+    
+    #nameField{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    #emailField{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    
+    #phoneField{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    #companyField{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    #messageField{
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+
+    #submitButton{
+        border-radius: .1em;
+        border:none;
+        grid-column: 1/2;
+        grid-row: 6/7;
+        background-color: #5f5f5f;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all .4s;
+    }
+
+    #submitButton:hover{
+        transform: scale(0.94);
+        background-color: gold;
+        border-color: black;
+        color:black;
+    }
+    
+    .emailPopUp{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top:75%;
+        left:50%;
+        background-color: #3f3f3f;
+        border-radius: .2em;
+        color:gold;
+        font-size: 2em;
+        opacity: 0;
+        transition: all .5s;
+    }
+    
+    .emailPopUpText{
+        margin:5px;
+    }
+    
+    .emailPopUpVisible{
+        opacity: 1;
+    }
+    
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 20%;
+        background-color: #3f3f3f;
+        margin-top:5vh;
+        padding-top: 10px;
+    }
+    
+    .footer p{
+        margin-top:0;
+        margin-bottom: .5em;
+    }
+    
+    .footerIconWrapper{
+        display: flex;
+        justify-content: center;
+        margin:0 10em;
+        align-items: center;
+        width: 40%;
+        height:100%;
+    }
+    
+    .footerIcon{
+        width:70px;
+        height: 70px;
+        background-color:#5f5f5f;
+        border-radius: .5em;
+        margin:0 5%;
+        transition: transform .5s, background-color .5s;
+    }
+    
+    .footerIcon:hover{
+        transform: scale(.9);
+        background-color:gold;
+    }
+    
+    .footerLink{
+        width:70px;
+        height:70px;
+    }
+}
+
+
+
+
+
+
+
+/*Desktop*/
+@media(min-width:720px){
+    .Contact{
+        height: 100vh;
+        width: 100vw;
+        background-color: white;
+        transform:   translateX(-100%);
+        opacity: 0;
+        transition: transform 1s, opacity 1.5s;
+    }
+    
+    .formWrapper{
+        width:100%;
+        height: 80%;
+    }
+    
+    .contactForm{
+        position: relative;
+        width:80%;
+        top:20%;
+        left: 10%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    
+    .contactForm *{
+        font-size: 300%;
+        font-family: 'Segoe UI',-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        outline: none;
+    }
+    
+    .formField{
+        border-radius: .1em;
+        border:none;
+        background-color: #3F3F3F;
+        color:gold;
+        caret-color: gold;
+    }
+    
+    .formField::placeholder{
+        columns: #5f5f5f;
+    }
+    
+    .invalidPlaceholder::placeholder{
+        color:black;
+    }
+    
+    .invalidEntry{
+        background-color: #ff000090;
+        caret-color: black;
+    }
+    
+    #nameField{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    #emailField{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    
+    #phoneField{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    #companyField{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    #submitButton{
+        border-radius: .1em;
+        border:none;
+        grid-column: 1/2;
+        grid-row: 5/6;
+        background-color: #5f5f5f;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all .4s;
+    }
+    
+    #submitButton:hover{
+        transform: scale(0.94);
+        background-color: gold;
+        border-color: black;
+        color:black;
+    }
+    
+    #messageField{
+        grid-row: 1/6;
+        grid-column: 2/3;
+    }
+    
+    .emailPopUp{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top:75%;
+        left:50%;
+        background-color: #3f3f3f;
+        border-radius: .2em;
+        color:gold;
+        font-size: 2em;
+        opacity: 0;
+        transition: all .5s;
+    }
+    
+    .emailPopUpText{
+        margin:5px;
+    }
+    
+    .emailPopUpVisible{
+        opacity: 1;
+    }
+    
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 20%;
+        background-color: #3f3f3f;
+    }
+    
+    .footer p{
+        margin-top:0;
+        margin-bottom: .5em;
+    }
+    
+    .footerIconWrapper{
+        display: flex;
+        justify-content: center;
+        margin:0 10em;
+        align-items: center;
+        width: 40%;
+        height:100%;
+    }
+    
+    .footerIcon{
+        width:70px;
+        height: 70px;
+        background-color:#5f5f5f;
+        border-radius: .5em;
+        margin:0 5%;
+        transition: transform .5s, background-color .5s;
+    }
+    
+    .footerIcon:hover{
+        transform: scale(.9);
+        background-color:gold;
+    }
+    
+    .footerLink{
+        width:70px;
+        height:70px;
+    }
+}

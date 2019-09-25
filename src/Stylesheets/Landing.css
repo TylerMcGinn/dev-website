@@ -1,0 +1,114 @@
+.Landing{
+    width: 100%;
+    height: 100vh;
+}
+
+.backgroundImg{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    background-image: url('../Media/landingCompressed.jpg');
+    z-index: -1;
+}
+
+.content{
+    position: relative;
+    height:100vh;
+    width:100vw;
+    color:black;
+    background-color: #ffffffb0;
+}
+
+.message{
+    position: absolute;
+    top:10vh;
+    left: 55vw;
+    line-height:0;
+    font-size: 5vw;
+    margin: 0;
+}
+
+.message h1:first-child{
+    margin-bottom: 80px;
+}
+
+.message h1{
+    padding-top:30px;
+}
+
+.message h6{
+    padding-top: 10px;
+    text-align: right; 
+}
+
+
+
+
+
+
+/* mobile */
+@media(max-width:985px){
+    .backgroundImg{
+        width: 100vw;
+        height: 100vh;
+        background-size: 140%;
+    }
+
+    .content{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .message{
+        font-size: 300%;
+        left: 8vw;
+        top:45vh;
+    }
+
+    .message h1:first-child{
+        margin-bottom: unset;
+    }
+}
+
+
+
+
+
+
+@media(max-width:720px){
+    .message{
+        font-size: 8vw;
+        top:55vh;
+    }
+
+    .backgroundImg{
+        width: 100vw;
+        height: 100vh;
+        background-position-x: -100px;
+        background-size: auto calc(100vh + 100px);
+    }
+
+    .content{
+        width: 100vw;
+    }
+
+    .message h1:first-child{
+        margin-bottom: unset;
+    }
+}
+
+
+
+
+
+
+@media(max-width:400px){
+    .message{
+        font-size: 8vw;
+        top:60vh;
+    }
+}

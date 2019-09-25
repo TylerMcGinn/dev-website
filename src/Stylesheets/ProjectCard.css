@@ -1,0 +1,217 @@
+/*Mobile*/
+@media(max-width:720px){
+    .ProjectCard{
+        display: flex;
+        justify-content: space-evenly;
+        width:100%;
+        height: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: .2rem solid black;
+        border-radius: .5em;
+        overflow: hidden;
+    }
+    
+    .discriptionBackground{
+        position: absolute;
+        height: 100%;
+        width:100%;
+        background-size: cover;
+        opacity: .1;
+    }
+    
+    .descriptionContentWrapper{
+        position: relative;
+        width:100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 4.8vw;
+    }
+    
+    .descriptionContentWrapper *{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin:5px 15px;
+    }
+    
+    .descriptionTitle{
+        font-family: 'Segoe UI Semibold';
+        margin-top: 5%;
+    }
+    
+    .projectCardStack{
+        position: relative;
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .projectType{
+        font-size: 140%;
+        font-weight: 500;
+        margin-bottom:0px;
+    }
+    
+    .description p{
+        text-align: center;
+        line-height: 5.6vw;
+    }
+    
+    .description img{
+        width:50px;
+        height: 50px;
+        margin:.3rem .3rem;
+    }
+    
+    .viewProjectButton{
+        background-color: transparent;
+        font-size: 120%;
+        border:.2rem solid black;
+        padding:.7rem;
+        margin-bottom: 10%;
+        border-radius: .2em;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .picture{
+        grid-area: 'pic';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 100%; 
+        overflow: hidden;
+        border-left:.2rem solid black;
+    }
+    
+    .picture img{
+        height:80%;
+        width:auto;
+    }
+ 
+    .stack img{
+        width:60px;
+        height: 60px;
+        margin:0 .1rem;
+    }
+
+    .picture{
+       display: none;
+    }
+}
+
+
+
+
+
+
+
+/*Desktop*/
+@media(min-width:720px){
+    .ProjectCard{
+        position: relative;
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 100%;
+        grid-template-areas: "desc pic";
+        width:100%;
+        height: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: .2rem solid black;
+        border-radius: .5em;
+        overflow: hidden;
+    }
+    
+    .description{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        grid-area: 'desc';
+        font-size: 1.5vw;
+    }
+    
+    .discriptionBackground{
+        position: absolute;
+        height: 100%;
+        width:100%;
+        background-size: cover;
+        opacity: .1;
+    }
+    
+    .descriptionContentWrapper{
+        position: relative;
+        width:100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .descriptionContentWrapper *{
+        margin-left:5%;
+        margin-right:5%;
+    }
+    
+    .descriptionTitle{
+        font-family: 'Segoe UI Semibold';
+        font-size: 3.5vw;
+    }
+    
+    .projectCardStack{
+        position: relative;
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .projectType{
+        font-size: 2vw;
+        font-weight: 500;
+        margin-bottom:0px;
+    }
+    
+    .description p{
+        text-align: center;
+        line-height: 3.6vh;
+    }
+    
+    .description img{
+        width:60px;
+        height: 60px;
+    }
+    
+    .viewProjectButton{
+        background-color: transparent;
+        font-size: 1.5vw;
+        border:.2rem solid black;
+        padding:.7rem;
+        margin-bottom: 10%;
+        border-radius: .2em;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .picture{
+        grid-area: 'pic';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 100%; 
+        overflow: hidden;
+        border-left:.2rem solid black;
+    }
+    
+    .picture img{
+        position: absolute;
+        top:0;
+        left:35.2%;
+        height:100%;
+        width:auto;
+    }
+}
