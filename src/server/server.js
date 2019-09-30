@@ -9,7 +9,7 @@ exports.handler = (event, context, callback) => {
             statusCode: 200,
             body: GmailApi.statusCode
         });
-    }, 5000);
+    }, 8000);
     let checkStatus = setInterval(() => {
         if(GmailApi.statusCode !== ''){
             clearTimeout(httpTimeout);
