@@ -7,6 +7,11 @@ import About2 from './Components/About2';
 import Portfolio from './Components/Portfolio';
 import Contact from './Components/Contact';
 import Project from './Components/Pages/Project';
+import html from './Media/Icons/HTML.png';
+import css from './Media/Icons/CSS.png';
+import js from './Media/Icons/javascript.png';
+import php from './Media/Icons/php.png';
+import bootstrap from './Media/Icons/bootstrap.png';
 import ts from './Media/Icons/typescript.png';
 import cs from './Media/Icons/cs.png';
 import sql from './Media/Icons/sql.png';
@@ -27,8 +32,12 @@ import windiIcon from './Media/ProjectCard/windiIcon.png';
 import windiGif from './Media/ProjectCard/windiGif.gif';
 import devWebsiteIcon from './Media/ProjectCard/devWebsiteIcon.png';
 import devWebsiteGif from './Media/ProjectCard/DevSite.gif';
+import sqlAdminIcon from './Media/ProjectCard/sqlAdminIcon.png';
+import sqlAdminGif from './Media/ProjectCard/SqlAdmin.gif';
 import electronicsProjIcon from './Media/ProjectCard/electronicsProjIcon.png';
 import samdScreenShot from './Media/ProjectCard/samdScreenShot.PNG';
+import photonIcon from './Media/ProjectCard/photonIcon.png';
+import photonScreenShot from './Media/ProjectCard/photonScreenShot.png';
 
 export default function App() {
   
@@ -61,6 +70,7 @@ export default function App() {
             <Contact props={{scrollCurrent}}/>
           </React.Fragment>
         )}/>
+        
         <Route exact path='/INSIGHT' render={()=>(
           <React.Fragment>
             <Project
@@ -90,6 +100,7 @@ export default function App() {
             />
           </React.Fragment>
         )}/>
+
         <Route exact path='/QUEST' render={()=>(
           <React.Fragment>
             <Project
@@ -117,6 +128,7 @@ export default function App() {
             />
           </React.Fragment>
         )}/>
+
         <Route exact path='/WINDI' render={()=>(
           <React.Fragment>
             <Project
@@ -143,6 +155,7 @@ export default function App() {
             />
           </React.Fragment>
         )}/>
+
         <Route exact path='/DEV WEBSITE' render={()=>(
           <React.Fragment>
             <Project
@@ -155,7 +168,7 @@ export default function App() {
                   {'Status: ':'Complete/Deployed'}
                 ]}
               ProjectLinks={[
-                {'GitHub: ':'https://github.com/TylerMcGinn/dev-website'}
+                {'GitHub: ':'https://github.com/TylerMcGinn/developer-website'}
               ]}
               ProjectDescription="I hope your enjoying it. The goal of this website and portfolio is to try and 
                                   show my creativity, style, skill and maybe a bit of personality. On the front-end 
@@ -168,6 +181,32 @@ export default function App() {
             />
           </React.Fragment>
         )}/>
+
+        <Route exact path='/SQL ADMIN' render={()=>(
+          <React.Fragment>
+            <Project
+              Title='SQL ADMIN'
+              Stack={[js, html, css, jquery, php, sql, bootstrap]}
+              ProjectParams={[
+                  {'Project: ':'Database Administration Page'},
+                  {'Type: ':'Full Stack Web App'},
+                  {'Stack: ':'HTML, CSS, Javascript, Jquery, PHP, SQL, Bootstrap'},
+                  {'Status: ':'Complete'}
+                ]}
+              ProjectLinks={[
+                {'GitHub: ':'https://github.com/TylerMcGinn/sqlAdmin'}
+              ]}
+              ProjectDescription="SQL Admin is a database administration page for performing operations on a mock 
+                                  user database. I decided to make this project to practice databasing operations as well
+                                  as object oriented Javascript and PHP. I used Bootstrap for styling this page as I wanted to see 
+                                  if using a component library would lower front-end developement time."
+              ProjectBackground={sqlAdminGif}
+              ProjectIcon={sqlAdminIcon}
+            />
+          </React.Fragment>
+        )}/>
+
+
         <Route exact path='/ATSAMD10/11 DEV BOARD' render={()=>(
           <React.Fragment>
             <Project
@@ -204,6 +243,37 @@ export default function App() {
             />
           </React.Fragment>
         )}/>
+
+        <Route exact path='/PHOTON' render={()=>(
+          <React.Fragment>
+            <Project
+              Title='PHOTON'
+              Stack={[electronics]}
+              ProjectParams={[
+                  {'Project: ':'Sustainable Automated Horticulture System'},
+                  {'Type: ':'Embedded Electronics Project'},
+                  {'Stack: ':'Electronics Project'},
+                  {'Status: ':'In Developement'}
+                ]}
+              ProjectLinks={[
+                {'EasyEDA: ':'https://easyeda.com/TylerDaRacer/Photon1'}
+              ]}
+              ProjectDescription="The goal of this project is to develope a sustainable and automated horticulture system 
+                                  with zero environmental footprint. So far the idea is to use the LED lighting system I designed
+                                  along with battery storage and a small solar panel to grow produce indoors year round. The 
+                                  lighting panels use Samsung 561B 3500K LED's and should provide an optimal light 
+                                  spectrum for plant growth. Most commercial horticulture 
+                                  lighting systems give off significant heat and require additional climate control so I 
+                                  decided to use a high voltage low current driver as a means of reducing heat emission.
+                                  For the next stage of developement I plan on using one of my ATSAMD10 Boards to automate
+                                  watering and lighting cycles as well as thermal management."
+              ProjectBackground={photonScreenShot}
+              ProjectIcon={photonIcon}
+            />
+          </React.Fragment>
+        )}/>
+
+
       </div>
     </Router>
   );

@@ -5,6 +5,11 @@ import '../Stylesheets/Portfolio.css';
 import ProjectCard from './Controls/ProjectCard';
 import Swiper from 'swiper';
 import '../../node_modules/swiper/dist/css/swiper.min.css';
+import html from '../Media/Icons/HTML.png';
+import css from '../Media/Icons/CSS.png';
+import js from '../Media/Icons/javascript.png';
+import php from '../Media/Icons/php.png';
+import bootstrap from '../Media/Icons/bootstrap.png';
 import fauna from '../Media/Icons/fauna.png';
 import ts from '../Media/Icons/typescript.png';
 import cs from '../Media/Icons/cs.png';
@@ -23,11 +28,14 @@ import questIcon from '../Media/ProjectCard/questIcon.png';
 import QuestScreenShot from '../Media/ProjectCard/QuestScreenShot.png';
 import devWebsiteIcon from '../Media/ProjectCard/devWebsiteIcon.png';
 import devWebsiteScreenShot from '../Media/ProjectCard/devSiteScreenShot.png';
+import sqlAdminIcon from '../Media/ProjectCard/sqlAdminIcon.png';
+import sqlAdminScreenShot from '../Media/ProjectCard/sqlAdminScreenShot.png'
 import windiIcon from '../Media/ProjectCard/windiIcon.png';
 import WindiScreenShot from '../Media/ProjectCard/WindiScreenShot.png';
 import electronicsProjIcon from '../Media/ProjectCard/electronicsProjIcon.png';
 import samdScreenShot from '../Media/ProjectCard/samdScreenShot.PNG';
-
+import photonIcon from '../Media/ProjectCard/photonIcon.png';
+import photonScreenShot from '../Media/ProjectCard/photonScreenShot.png';
 
 export default function Portfolio({props}){
     
@@ -86,6 +94,7 @@ export default function Portfolio({props}){
             <div className="swiperView">
                 <div className="swiper-container">
                     <div className="swiper-wrapper">
+
                         <div className="swiper-slide">
                             <ProjectCard 
                                 projectTitle='INSIGHT' 
@@ -96,6 +105,7 @@ export default function Portfolio({props}){
                                 projectBackground={insightScreenShot}
                             />
                         </div>
+
                         <div className="swiper-slide">
                             <ProjectCard 
                                 projectTitle='QUEST' 
@@ -106,6 +116,7 @@ export default function Portfolio({props}){
                                 projectBackground={QuestScreenShot}
                             />
                         </div>
+
                         <div className="swiper-slide">
                             <ProjectCard 
                                 projectTitle='WINDI' 
@@ -116,6 +127,7 @@ export default function Portfolio({props}){
                                 projectBackground={WindiScreenShot}
                             />
                         </div>
+
                         <div className="swiper-slide">
                             <ProjectCard 
                                 projectTitle='DEV WEBSITE' 
@@ -126,6 +138,18 @@ export default function Portfolio({props}){
                                 projectBackground={devWebsiteScreenShot}
                             />
                         </div>
+
+                        <div className="swiper-slide">
+                            <ProjectCard 
+                                projectTitle='SQL ADMIN' 
+                                stack={[js, html, css, jquery, php, sql, bootstrap]}
+                                projectType='Full Stack Web Application'
+                                projectDescription='A database administration page for performing operations on a mock user database.'
+                                projectIcon={{backgroundImage: `url(${sqlAdminIcon})`}}
+                                projectBackground={sqlAdminScreenShot}
+                            />
+                        </div>
+
                         <div className="swiper-slide">
                             <ProjectCard 
                                 projectTitle='ATSAMD10/11 DEV BOARD' 
@@ -136,6 +160,18 @@ export default function Portfolio({props}){
                                 projectBackground={samdScreenShot}
                             />
                         </div>
+
+                        <div className="swiper-slide">
+                            <ProjectCard 
+                                projectTitle='PHOTON' 
+                                stack={[electronics]}
+                                projectType='Embedded Electronics Project'
+                                projectDescription='Sustainable Automated Horticulture System.'
+                                projectIcon={{backgroundImage: `url(${photonIcon})`}}
+                                projectBackground={photonScreenShot}
+                            />
+                        </div>
+
                     </div>
                         <div className="swiper-button-prev" onClick={previousSlide}/>
                         <div className="swiper-button-next" onClick={nextSlide}></div>
